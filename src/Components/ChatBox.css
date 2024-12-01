@@ -135,7 +135,6 @@
     content: '...';
     animation: blink 1.5s infinite;
   }
-
   /* Gamified Design Container */
 .game-container {
     font-family: 'Comic Sans MS', 'Arial', sans-serif;
@@ -149,7 +148,7 @@
   }
   
   /* Heading Style */
-  .game-header {
+  .game-header, .game-title {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -174,9 +173,22 @@
     transform: scale(1.05);
   }
   
-  .game-button-secondary {
-    background-color: #ffc107;
-    color: #000;
+  /* Progress Bar */
+  .progress-bar {
+    background: #ccc;
+    border-radius: 10px;
+    margin: 15px 0;
+    height: 20px;
+    width: 100%;
+  }
+  
+  .progress-bar-filled {
+    background: #28a745;
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 10px;
   }
   
   /* Text Area */
@@ -206,7 +218,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
   
-  /* Game Buttons */
+  /* General Text Styling */
+  .game-text {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
   .button-container {
     display: flex;
     justify-content: center;
@@ -217,12 +234,6 @@
   .text-primary {
     font-size: 1.2rem;
     color: #0077ff;
-  }
-  
-  /* General Text Styling */
-  .game-text {
-    color: #fff;
-    font-size: 1.1rem;
   }
   
   
