@@ -100,9 +100,9 @@ class MedicalDocumentProcessor:
             prompt = """
             You are a medical assistant that helps users with creating a medical journey pathway by tracking medical information, such as medications, appointments, and treatments.
             The user will ask you about their medical information, and you need to give detailed and specific responses based on the data structure format and also
-            “Given the following medication routine, generate a detailed treatment journey pathway for the user. The pathway should include the following:
+            “Given the following medication routine, generate a detailed treatment journey pathway for the user. The pathway should include the following for each medication:
 
-            1. **Daily Schedule**: A detailed timeline of when and how the medication should be taken each day. Include:
+            1. **Daily Schedule**: A detailed timeline of when and how the medication(s) gotten from the message should be taken each day. Include:
             - The number of doses per day.
             - The specific time(s) for each dose.
             - Any instructions (e.g., take with food, avoid certain activities).
@@ -116,12 +116,6 @@ class MedicalDocumentProcessor:
 
             4. **Post-Treatment Follow-Up**: Suggested follow-up appointments or checks after the treatment is completed to ensure effectiveness and monitor side effects.
 
-            ### Routine Example:
-            - **Drug**: Artemether-Lumefantrine (ACT) - Dosage: Take 4 tablets twice daily for 3 days with food.
-            - **Start Date**: [Insert start date]
-            - **End Date**: [Insert end date, 3 days after start date]
-            - **Frequency**: Twice daily (Morning and Evening)
-            - **Time of Day**: 8:00 AM (Morning), 8:00 PM (Evening)
 
             Based on this routine, create a treatment journey pathway.”
             """

@@ -1,0 +1,234 @@
+/* Chat interface container */
+.game-container {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(120deg, #ff9a8b, #ff6a00);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+  }
+  
+  /* Avatar container */
+  .avatar-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ai-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+  }
+  
+  .ai-avatar:hover {
+    transform: rotate(15deg);
+  }
+  
+  /* Scrollable chat response */
+  .response-interface {
+    text-align: center;
+    padding: 30px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allow scrolling for long content */
+    max-height: 500px; /* Set max height for the response area */
+    margin-top: 20px;
+  }
+  
+  /* Response content styling */
+  .response-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto; /* Make sure this container scrolls if the content exceeds height */
+  }
+  
+  .response-text {
+    font-size: 1.3rem;
+    color: #444;
+    word-wrap: break-word;
+    white-space: pre-wrap; /* Ensures new lines are kept in long responses */
+  }
+  
+  /* Progress bar */
+  .progress-bar {
+    background: #e0e0e0;
+    height: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+  
+  .progress-bar-filled {
+    background: #0077ff;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+  }
+  
+  /* Button container */
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the level indicator */
+  .level-indicator {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  /* Chat input and button */
+  .game-textarea {
+    border: 3px solid #fffcf9;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  
+  /* Game buttons */
+  .game-button {
+    background-color: #28a745;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .game-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .game-button-secondary {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  /* Loader */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .loader::after {
+    content: '...';
+    animation: blink 1.5s infinite;
+  }
+
+  /* Gamified Design Container */
+.game-container {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(120deg, #ff9a8b, #ff6a00);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Heading Style */
+  .game-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  /* Button Style */
+  .game-button {
+    background-color: #28a745;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .game-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .game-button-secondary {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  /* Text Area */
+  .game-textarea {
+    border: 3px solid #fffcf9;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  
+  /* Text Container */
+  .response-interface {
+    text-align: center;
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    overflow-y: auto; /* Allow scrolling */
+    max-height: 400px; /* Set a max height for scroll */
+  }
+  
+  /* Image Preview */
+  .game-image {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Game Buttons */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Loading Indicator */
+  .text-primary {
+    font-size: 1.2rem;
+    color: #0077ff;
+  }
+  
+  /* General Text Styling */
+  .game-text {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  
+  @keyframes blink {
+    50% {
+      color: transparent;
+    }
+  }
+  
